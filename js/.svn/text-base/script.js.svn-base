@@ -1,0 +1,63 @@
+
+/*
+ * Animation/Interaction Controls
+ * 
+ */
+$(document).ready(function() {
+	
+	/* Colorbox */
+	$('a.thumbnail').colorbox({href:"./inc/popup_photo.php"});
+	$("#feedbackText a.thumbnail").colorbox({href:"./inc/popup_photo.php"});
+	$("div.thumbnail img").colorbox({href:"./inc/popup_photo.php"});
+
+	/* Map-based Feedback */
+	$("#feedbackMap").click(function() {
+		$("#feedbackMap").removeClass("span12").addClass("span8");
+		$("#feedbackMap img").attr("src", "http://placehold.it/800x515&text=google map");
+		$("#myPin").removeClass("icon-2x").addClass("icon-4x");
+		$("#feedbackText").show("fast");
+	});
+	$("#feedbackBtn").click(function() {
+		$("#feedbackMap").removeClass("span8").addClass("span4");
+		$("#feedbackMap img").attr("src", "http://placehold.it/375x500&text=google map");
+		$("#feedbackComments").show("fast");
+		$("#feedbackArrow2").show("fast");
+	});
+	$("#feedbackArrow1").click(function() {
+		$("#feedbackMap").removeClass("span4").removeClass("span8").addClass("span12");
+		$("#feedbackMap img").attr("src", "http://placehold.it/1200x510&text=google map");
+		$("#myPin").removeClass("icon-4x").addClass("icon-2x");
+		$("#feedbackText").hide();
+		$("#feedbackComments").hide();
+		$("#feedbackArrow2").hide();
+	});
+	$("#feedbackArrow2").click(function() {
+		$("#feedbackMap").removeClass("span4").addClass("span8");
+		$("#feedbackMap img").attr("src", "http://placehold.it/800x515&text=google map");
+		$("#feedbackComments").hide();
+		$("#feedbackArrow2").hide();
+	});
+	
+	/* Document Commenting */
+	$("#annotationPins .pin").toggle(function() {
+		$(this).children("i:first").removeClass("icon-comment").addClass("icon-comment-alt");
+		$(this).children("div:first").show();
+	}, function() {
+		$(this).children("i:first").removeClass("icon-comment-alt").addClass("icon-comment");
+		$(this).children("div:first").hide();
+	});
+	$("#annotationHide").click(function() {
+		$("#annotationHide").toggle();
+		$("#annotationShow").toggle();
+		$("#annotationPins .pin").toggle();
+	});
+	$("#annotationShow").click(function() {
+		$("#annotationHide").toggle();
+		$("#annotationShow").toggle();
+		$("#annotationPins .pin").toggle();
+	});
+	
+	/* Comments */
+	$(".comment").shorten({showChars: 200});
+	
+});

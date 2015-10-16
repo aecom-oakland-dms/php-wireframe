@@ -1,0 +1,66 @@
+
+a:hover > i {
+	text-decoration: none;
+}
+
+/*
+ * Mobile adjustments
+ */
+@media (max-width: 767px) {
+	.hero-unit {
+		padding: 30px;
+	}
+	h1, .hero-unit h1 {
+		font-size: 30px;
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.navbar .nav {
+		width: 100%;
+	}
+	.navbar .nav > li {
+		float: none;
+	}
+	.navbar .nav > li > .dropdown-menu:after {
+	    content: none;
+	}
+	.navbar .nav  li a:hover {
+		color: #fff;
+	}
+}
+@media (min-width: 768px) {
+	#logoCity {
+		position: relative;
+		top: -10px;
+	}
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	.hero-unit {
+		padding: 30px;
+	}
+	h1, .hero-unit h1 {
+		font-size: 40px;
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.navbar .nav {
+		width: 100%;
+	}
+	.navbar .nav > li {
+		float: none;
+	}
+	.navbar .nav > li > .dropdown-menu:after {
+	    content: none;
+	}
+	.navbar .nav  li a:hover {
+		color: #fff;
+	}
+}
+
+
+
+

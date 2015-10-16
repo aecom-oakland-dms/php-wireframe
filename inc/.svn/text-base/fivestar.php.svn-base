@@ -1,0 +1,2 @@
+<small><strong>Rating</strong></small> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-half-empty"></i> <i class="icon-star-empty"></i><br />
+<small>Average: 3.5 (47 votes)</small>

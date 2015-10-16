@@ -1,0 +1,1 @@
+<a href="user.php">Login</a> or <a href="user.php">register</a> to post comments

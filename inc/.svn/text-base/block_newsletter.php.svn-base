@@ -1,0 +1,10 @@
+<div class="well well-small">
+	<h2>Newsletter</h2>
+  <form>
+		<div class="input-append">
+		  <input class="input-medium" id="appendedInputButtons" type="text" placeholder="Email">
+		  <button class="btn" type="button">Send</button>
+		</div>
+		<span class="help-block">Sign up for regular updates.</span>
+	</form>
+</div>

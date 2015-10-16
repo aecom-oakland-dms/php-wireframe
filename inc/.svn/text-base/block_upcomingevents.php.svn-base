@@ -1,0 +1,14 @@
+<div class="well well-small">
+	<h2>Upcoming events</h2>
+	<ul class="nav nav-list">
+		<li class="nav-header">October 2013</li>
+		<li><a href="event.php">Sed diam nonummy nibhegestas eget quam</a></li>
+		<li><a href="event.php">Duis autemvel eumadipiscing elit</a></li>
+		<li class="nav-header">November 2013</li>
+		<li><a href="event.php">Consectetuer adipiscingnibh ultricies</a></li>
+		<li><a href="event.php">Adipiscing elitsed diam</a></li>
+		<li><a href="event.php">Lorem ipsum dolorset diamnonummy nibh</a></li>
+	</ul>
+	<br />
+	<a href="events.php" class="btn">View all</a>
+</div>
